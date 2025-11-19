@@ -9,6 +9,10 @@ export default function Home() {
   const [celebrationActive, setCelebrationActive] = useState(false);
 
   const handleOpenGift = () => {
+    // dispatch event so the persistent audio player will play and hide its control
+    try {
+      document.dispatchEvent(new CustomEvent('play-starlight'));
+    } catch {}
     setIsOpening(true);
     setTimeout(() => {
       setIsOpened(true);
@@ -211,7 +215,7 @@ export default function Home() {
           {/* Message */}
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-lg transition-all duration-1000">
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan anehnya. Semoga hari ini penuh dengan senyuman dan momen indah, serta berhenti mi jadi patteriang dan pagelliang. 💜
+              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan anehnya. Semoga hari ini penuh dengan senyuman dan momen indah, serta semoga tidak patteriang dan pagelliang mi 🤗. 💜
             </p>
           </div>
 
