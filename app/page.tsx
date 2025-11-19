@@ -1,24 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [isOpening, setIsOpening] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
   const [showBirthday, setShowBirthday] = useState(false);
   const [celebrationActive, setCelebrationActive] = useState(false);
-  const audioRef = useRef<HTMLAudioElement>(null);
-
-  useEffect(() => {
-    const handleFirstInteraction = () => {
-      if (audioRef.current) {
-        audioRef.current.play().catch(() => {});
-      }
-      document.removeEventListener('click', handleFirstInteraction);
-    };
-    document.addEventListener('click', handleFirstInteraction);
-    return () => document.removeEventListener('click', handleFirstInteraction);
-  }, []);
 
   const handleOpenGift = () => {
     setIsOpening(true);
@@ -34,11 +22,7 @@ export default function Home() {
   if (!showBirthday) {
     return (
       <main className="min-h-screen bg-gradient-to-b from-purple-100 via-purple-50 to-white flex items-center justify-center overflow-hidden relative transition-all duration-1000">
-        <audio
-          ref={audioRef}
-          src="/starlight.mp3"
-          loop
-        />
+        {/* Audio player moved to root layout for persistence across pages */}
 
         <div className="absolute inset-0 pointer-events-none">
           {[
@@ -227,7 +211,7 @@ export default function Home() {
           {/* Message */}
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-lg transition-all duration-1000">
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan aneh. Semoga hari ini penuh dengan senyuman dan momen indah. 💜
+              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan anehnya. Semoga hari ini penuh dengan senyuman dan momen indah, serta berhenti mi jadi patteriang dan pagelliang. 💜
             </p>
           </div>
 
