@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
   const [isOpening, setIsOpening] = useState(false);
@@ -36,7 +36,7 @@ export default function Home() {
       <main className="min-h-screen bg-gradient-to-b from-purple-100 via-purple-50 to-white flex items-center justify-center overflow-hidden relative transition-all duration-1000">
         <audio
           ref={audioRef}
-          src="https://assets.mixkit.co/active_storage/sfx/2318/2318-preview.mp3"
+          src="/starlight.mp3"
           loop
         />
 
