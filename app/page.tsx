@@ -118,16 +118,16 @@ export default function Home() {
             <div className="text-center animate-fade-in">
               <h1 className="text-3xl md:text-4xl font-bold mb-3">
                 <span className="bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 bg-clip-text text-transparent">
-                  Ada Hadiah Untukmu!
+                  Ada Hadiahkuu
                 </span>
               </h1>
-              <p className="text-base md:text-lg text-purple-600 mb-8">Buka untuk kejutan istimewa</p>
+              <p className="text-base md:text-lg text-purple-600 mb-8">(｡◠‿◠｡)</p>
 
               <button
                 onClick={handleOpenGift}
                 className="px-6 md:px-8 py-3 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full font-bold text-base md:text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-pulse"
               >
-                Buka Sekarang
+                Buka Cepatttt!!!
               </button>
             </div>
           )}
@@ -227,7 +227,7 @@ export default function Home() {
           {/* Message */}
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-lg transition-all duration-1000">
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Hari spesial untuk orang spesial. Terima kasih sudah jadi teman yang baik dan selalu memberikan kebahagiaan. Semoga hari ini penuh dengan senyuman dan momen indah. 💜
+              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan aneh. Semoga hari ini penuh dengan senyuman dan momen indah. 💜
             </p>
           </div>
 
