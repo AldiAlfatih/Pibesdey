@@ -215,7 +215,7 @@ export default function Home() {
           {/* Message */}
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-lg transition-all duration-1000">
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan anehnya. Semoga hari ini penuh dengan senyuman dan momen indah, serta semoga tidak patteriang dan pagelliang mi 🤗. 💜
+              Terima kasih sudah jadi teman yang baik dan selalu membuat terhibur dengan berbagai yappinganmu, meskipun selalu ada gebrakan anehnya. Semoga hari ini penuh dengan senyuman dan momen indah, serta semoga tidak patteriang dan pagelliang mi.🤗💜
             </p>
           </div>
 

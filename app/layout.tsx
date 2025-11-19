@@ -1,7 +1,7 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import './globals.css'
-import AudioPlayer from '../components/audio-player'
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import AudioPlayer from '../components/audio-player';
+import './globals.css';
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
